@@ -236,7 +236,7 @@ $(document).ready(function(){
                 for(var d = 0; d < 16; d++) {
                     var iv = {stamina: s, attack: a, defense: d};
                     var cp = calcCP(base, iv, CPM[level]);
-                    var per = (a+d+s)/48.0
+                    var per = (a+d+s+3)/48.0
                     if (cp == cur_cp) {
                         result.push({level: level, attack: a, defense: d, stamina: s, percent: per});
                     }
